@@ -1,13 +1,12 @@
-#!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('cms2:server');
-var http = require('http');
+import app = require('../app');
+import debugModule = require('debug');
+import http = require('http')
 
+var debug = debugModule('cms2:server');
 /**
  * Get port from environment and store in Express.
  */

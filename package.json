@@ -3,8 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "./node_modules/.bin/ts-node ./bin/www.ts",
+    "build": "./node_modules/.bin/tsc",
+    "install": "./node_modules/.bin/typings install"
   },
+  "author": {
+    "name": "Pascal Garber",
+    "email": "pascal@jumplink.eu",
+    "url": "http://jumplink.eu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JumpLink/cms2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JumpLink/cms2/issues"
+  },
+  "homepage": "https://github.com/JumpLink/cms2",
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
@@ -13,6 +28,9 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "node-sass-middleware": "0.8.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "ts-node": "^0.5.5",
+    "typescript": "^1.7.5",
+    "typings": "^0.6.3"
   }
 }
