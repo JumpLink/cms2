@@ -50,6 +50,12 @@ declare module "node-sass-middleware" {
      */
 
     function nodeSassMiddleware(options: Options): express.RequestHandler;
+
+    /**
+     * 
+     */
+    namespace nodeSassMiddleware { }
+
     /**
      * 
      */

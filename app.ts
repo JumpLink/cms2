@@ -5,7 +5,7 @@ import * as logger from "morgan";
 import cookieParser = require('cookie-parser');
 import bodyParser = require('body-parser');
 
-import sassMiddleware = require('node-sass-middleware');
+import * as sassMiddleware from "node-sass-middleware";
 
 import routes = require('./routes/index');
 import users = require('./routes/users');
