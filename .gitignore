@@ -37,4 +37,9 @@ npm-debug.log
 built/
 
 # TypeScript type definitions
-typings/
+typings/browser/
+typings/main/
+typings/browser.d.ts
+typings/main.d.ts
+!typings/custom/
+!typings/custom.d.ts

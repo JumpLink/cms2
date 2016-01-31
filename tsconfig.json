@@ -12,6 +12,7 @@
     ],
     "files": [
         "bin/www.ts",
-        "typings/main.d.ts"
+        "typings/main.d.ts",
+        "typings/custom.d.ts"
     ]
 }
