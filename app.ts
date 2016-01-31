@@ -1,10 +1,10 @@
-
 import * as express from "express";
 import * as path from "path";
 import * as favicon from "serve-favicon";
 import * as logger from "morgan";
 
-import * as ExpressTheme from './node_modules/express-theme/express-theme.ts';
+
+import * as ExpressTheme from './node_modules/express-theme/express-theme';
 
 import cookieParser = require('cookie-parser');
 import bodyParser = require('body-parser');
@@ -12,11 +12,17 @@ import bodyParser = require('body-parser');
 
 var app = express();
 
-var theme = new ExpressTheme.Theme("test");
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+var theme = new ExpressTheme.Theme({
+  views: app.get('views'),
+  viewEngine: app.get('view engine'),
+  env: app.get('env') || '',
+  themes: 'themes',
+  theme: 'default'
+});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
