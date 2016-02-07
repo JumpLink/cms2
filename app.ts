@@ -4,7 +4,7 @@ import * as favicon from "serve-favicon";
 import * as logger from "morgan";
 
 
-import * as ExpressTheme from './node_modules/express-theme/express-theme';
+import * as ExpressTheme from './dev_node_modules/express-theme/express-theme';
 
 import cookieParser = require('cookie-parser');
 import bodyParser = require('body-parser');
@@ -17,11 +17,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 var theme = new ExpressTheme.Theme({
-  views: app.get('views'),
-  viewEngine: app.get('view engine'),
-  env: app.get('env') || '',
   themes: 'themes',
-  theme: 'default'
+  theme: 'jumplink.eu',
 });
 
 app.use(logger('dev'));

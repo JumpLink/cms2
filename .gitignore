@@ -44,3 +44,6 @@ typings/browser.d.ts
 typings/main.d.ts
 !typings/custom/
 !typings/custom.d.ts
+
+# Themes
+views/themes
