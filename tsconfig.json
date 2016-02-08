@@ -6,7 +6,8 @@
         "outDir": "built",
         "rootDir": ".",
         "sourceMap": false,
-        "declaration": true
+        "declaration": true,
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules"

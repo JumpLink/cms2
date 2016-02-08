@@ -4,7 +4,8 @@ import * as favicon from "serve-favicon";
 import * as logger from "morgan";
 
 
-import * as ExpressTheme from './dev_node_modules/express-theme/express-theme';
+// import * as ExpressTheme from 'express-theme';
+import ExpressTheme = require('./node_modules/express-theme/express-theme');
 
 import cookieParser = require('cookie-parser');
 import bodyParser = require('body-parser');
