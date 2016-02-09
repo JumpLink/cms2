@@ -1,0 +1,24 @@
+{
+  "name": "cms2",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Pascal Garber"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JumpLink/cms2",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jumplink.eu": "JumpLink/jumplink.eu"
+  }
+}

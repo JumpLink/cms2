@@ -5,7 +5,10 @@
   "scripts": {
     "start": "./node_modules/.bin/ts-node ./bin/www.ts",
     "build": "./node_modules/.bin/tsc",
-    "install": "./node_modules/.bin/typings install"
+    "watch": "npm run build -- -w",
+    "typings": "./node_modules/.bin/typings install",
+    "bower": "./node_modules/.bin/bower install",
+    "install": "npm run typings && npm run bower"
   },
   "author": {
     "name": "Pascal Garber",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/JumpLink/cms2",
   "dependencies": {
     "body-parser": "~1.14.2",
+    "bower": "^1.7.7",
     "cookie-parser": "~1.4.1",
     "debug": "~2.2.0",
     "express": "~4.13.1",
@@ -33,6 +37,7 @@
     "serve-favicon": "~2.3.0",
     "ts-node": "^0.5.5",
     "typescript": "^1.7.5",
-    "typings": "^0.6.3"
+    "typings": "^0.6.3",
+    "webpack": "^1.12.13"
   }
 }

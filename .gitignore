@@ -35,7 +35,7 @@ npm-debug.log
 *.css.map
 
 # TypeScript Results
-built/
+*.js
 
 # TypeScript type definitions
 typings/browser/
